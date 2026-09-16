@@ -1,0 +1,12 @@
+schema: "classroom50/repo-config/v1"
+classroom: "cse4207-fall-2026"
+assignment: "lab3"
+owner:
+  username: "drewrosWashU"
+  id: 179524623
+  accepted_at: "2026-09-16T15:01:34Z"
+source:
+  owner: "cse4207-fall-2026"
+  owner_id: 319518895
+  repo: "lab-template"
+  branch: "main"
