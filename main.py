@@ -12,7 +12,7 @@ app = FastAPI()
 templates = Jinja2Templates(directory="templates")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 s3 = boto3.resource("s3", 
-                    aws_access_key_id=aws_access_key, 
+                    aws_access_key=aws_access_key, 
                     aws_secret_access_key=aws_secret_access_key)
 
 def get_data():
