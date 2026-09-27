@@ -5,7 +5,7 @@ import json
 import boto3
 import os
 
-aws_access_key = os.environ.get("AWS_ACCESS_KEY_ID")
+aws_access_key = os.environ.get("AWS_ACCESS_KEY")
 aws_secret_access_key = os.environ.get("AWS_SECRET_ACCESS_KEY")
 
 app = FastAPI()
