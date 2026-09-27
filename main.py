@@ -5,14 +5,14 @@ import json
 import boto3
 import os
 
-aws_access_key_id = os.environ.get("AWS_ACCESS_KEY_ID")
+aws_access_key = os.environ.get("AWS_ACCESS_KEY_ID")
 aws_secret_access_key = os.environ.get("AWS_SECRET_ACCESS_KEY")
 
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 s3 = boto3.resource("s3", 
-                    aws_access_key_id=aws_access_key_id, 
+                    aws_access_key_id=aws_access_key, 
                     aws_secret_access_key=aws_secret_access_key)
 
 def get_data():
